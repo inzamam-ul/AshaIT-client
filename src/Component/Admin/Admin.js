@@ -44,7 +44,7 @@ const Admin = () => {
                 <img
                   className="mb-4"
                   style={{ height: 70, borderRadius: 50 }}
-                  src={loggedInUser.picture}
+                  src={loggedInUser.photo}
                   alt=""
                 />{" "}
                 <br />

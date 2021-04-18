@@ -45,6 +45,15 @@
     margin-top: 5px;
     margin-left: 0px;
   }
+
+  .head a.nav-link {
+    margin-left: 0px;
+  }
+
+  span.dashboard-logo {
+    padding-left: 0px !important;
+    margin-right: 0px;
+  }
 }
 .gif {
   height: 160px;

@@ -33,19 +33,21 @@ const Sidebar = () => {
   return (
     <div className="admin-panel">
       <Link className="admin-logo" to="/">
-        <Navbar.Brand className="d-flex align-items-center pl-5">
-          <img
-            style={{ height: 40 }}
-            className="brand mr-2"
-            src={logo}
-            alt=""
-          />
-          <h3
-            style={{ textDecoration: "none" }}
-            className="brand my-3 brand-admin"
-          >
-            Asha IT
-          </h3>
+        <Navbar.Brand className="d-flex justify-content-center align-items-center pl-5 dashboard-logo">
+          <div className="d-flex align-items-center">
+            <img
+              style={{ height: 40 }}
+              className="brand mr-2"
+              src={logo}
+              alt=""
+            />
+            <h3
+              style={{ textDecoration: "none" }}
+              className="brand my-3 brand-admin"
+            >
+              Asha IT
+            </h3>
+          </div>
         </Navbar.Brand>
       </Link>
 

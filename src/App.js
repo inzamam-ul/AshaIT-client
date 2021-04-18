@@ -14,8 +14,10 @@ export const UserContext = createContext();
 function App() {
   const token = sessionStorage.getItem("token");
   const decodedToken = token && jwtDecode(token);
+  const decodedUser = { ...decodedToken };
+  decodedUser.photo = decodedUser.picture;
   const [loggedInUser, setLoggedInUser] = useState(
-    decodedToken ? decodedToken : {}
+    decodedUser ? decodedUser : {}
   );
   const [isAdmin, setIsAdmin] = useState(false);
 

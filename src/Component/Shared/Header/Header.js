@@ -42,7 +42,7 @@ const Header = () => {
               <span className="rounded p-2 bg-light">
                 <img
                   style={{ height: 40, borderRadius: 50 }}
-                  src={loggedInUser.picture}
+                  src={loggedInUser.photo}
                   alt=""
                 />
               </span>

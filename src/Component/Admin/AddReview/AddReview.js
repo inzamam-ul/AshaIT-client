@@ -7,14 +7,14 @@ const AddReview = () => {
   const { loggedInUser } = useContext(UserContext);
   console.log(loggedInUser);
   const [reviewAdded, setReviewAdded] = useState(false);
-  const { email, name, picture } = loggedInUser;
+  const { email, name, picture, photo } = loggedInUser;
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
   const onSubmit = (data, e) => {
-    const newData = { name, email, picture, ...data };
+    const newData = { name, email, photo, picture, ...data };
     const url = "https://morning-tor-68251.herokuapp.com/addReview";
     console.log(newData);
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 
 const Testimonial = (props) => {
-  const { name, picture, review } = props.data;
+  const { name, photo, picture, review } = props.data;
 
   return (
     <div className="my-3 p-2">
@@ -15,7 +15,7 @@ const Testimonial = (props) => {
                 borderRadius: "50%",
               }}
               className="product-img"
-              src={picture}
+              src={picture || photo}
               alt=""
             />
           </Card.Title>
