@@ -1,0 +1,14 @@
+.thumbnail:hover.thumbnail img {
+  filter: grayscale(0.5);
+  transform: scale(1.3);
+}
+.thumbnail img {
+  transition: ease 0.3s;
+}
+.thumbnail {
+  overflow: hidden;
+}
+.map {
+  border: none;
+  width: 100%;
+}
