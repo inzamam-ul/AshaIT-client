@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Route, Switch, useRouteMatch } from "react-router";
 import { UserContext } from "../../App";
 import CheckOut from "../CheckOut/CheckOut";
+import Shiping from "../Shiping/Shiping";
 import AddAdmin from "./AddAdmin/AddAdmin";
 import AddReview from "./AddReview/AddReview";
 import AddServices from "./AddServices/AddServices";
@@ -68,6 +69,9 @@ const Admin = () => {
             </Route>
             <Route path={`${path}/checkout/:name/:id`}>
               <CheckOut />
+            </Route>
+            <Route path={`${path}/shiping/:name/:id`}>
+              <Shiping />
             </Route>
             <Route path={`${path}/allOrder/:email`}>
               <AllOrders />

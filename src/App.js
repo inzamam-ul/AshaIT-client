@@ -7,8 +7,6 @@ import Admin from "./Component/Admin/Admin";
 import Login from "./Component/Shared/Login/Login";
 import PrivetRoute from "./Component/Shared/PrivetRoute/PrivetRoute";
 import jwtDecode from "jwt-decode";
-import CheckOut from "./Component/CheckOut/CheckOut";
-import Header from "./Component/Shared/Header/Header";
 export const UserContext = createContext();
 
 function App() {
@@ -36,10 +34,6 @@ function App() {
             </PrivetRoute>
             <Route path="/login">
               <Login />
-            </Route>
-            <Route path="/service/:name/:id">
-              <Header />
-              <CheckOut />
             </Route>
 
             <Route path="*">

@@ -22,10 +22,7 @@ const Shiping = () => {
     <>
       {orderStatus ? (
         <div className="container">
-          <div
-            style={{ height: "90vh" }}
-            className="row d-flex justify-content-center align-items-center"
-          >
+          <div className="row mt-5 d-flex justify-content-center align-items-center">
             <div className="col-md-5">
               <PaymentGateWay formData={formData} />
             </div>

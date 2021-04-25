@@ -18,7 +18,7 @@ const CheckOut = () => {
   return (
     <div className="container">
       <h3 className="mt-2">Order Details</h3>
-      {productdetails ? (
+      {productdetails.id == "undefined" ? (
         <div className="mt-5 p-2 bg-light shadow">
           <h3>There is no product to checkout</h3>
           <Link to="/">
@@ -56,7 +56,7 @@ const CheckOut = () => {
             </tbody>
           </table>
           <div>
-            <Link to={`/checkout/${name}/${_id}`}>
+            <Link to={`/admin/shiping/${name}/${_id}`}>
               <button
                 className="btn btn-outline-secondary float-right mt-3 cancle"
                 type="button"
