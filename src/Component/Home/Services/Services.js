@@ -7,11 +7,9 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://morning-tor-68251.herokuapp.com/services")
-      .then((res) => {
-        setServices(res.data);
-      });
+    axios.get("https://asha-it-server.vercel.app/services").then((res) => {
+      setServices(res.data);
+    });
   }, []);
 
   return (

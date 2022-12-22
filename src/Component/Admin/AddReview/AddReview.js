@@ -15,7 +15,7 @@ const AddReview = () => {
   } = useForm();
   const onSubmit = (data, e) => {
     const newData = { name, email, photo, picture, ...data };
-    const url = "https://morning-tor-68251.herokuapp.com/addReview";
+    const url = "https://asha-it-server.vercel.app/addReview";
     console.log(newData);
 
     axios.post(url, newData).then((res) => {

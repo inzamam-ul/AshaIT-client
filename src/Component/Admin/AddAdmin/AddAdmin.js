@@ -11,7 +11,7 @@ const AddAdmin = () => {
   } = useForm();
   const onSubmit = (data, e) => {
     console.log(data);
-    const url = "https://morning-tor-68251.herokuapp.com/addAdmin";
+    const url = "https://asha-it-server.vercel.app/addAdmin";
 
     axios.post(url, data).then((res) => {
       console.log(res.data);

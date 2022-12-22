@@ -58,7 +58,7 @@ const SingleEditableOrder = (props) => {
   const handleChange = (event) => {
     const newData = { ...currentData };
     newData.status = event.target.value;
-    const url = `https://morning-tor-68251.herokuapp.com/updateOrderStatus/${_id}`;
+    const url = `https://asha-it-server.vercel.app/updateOrderStatus/${_id}`;
     axios.patch(url, newData).then((res) => {
       console.log(res.data);
       setCurrentData({ _id, ...newData });

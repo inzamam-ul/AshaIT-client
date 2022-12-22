@@ -9,7 +9,7 @@ const Testimonials = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    axios.get("https://morning-tor-68251.herokuapp.com/reviews").then((res) => {
+    axios.get("https://asha-it-server.vercel.app/reviews").then((res) => {
       setTestimonials(res.data);
     });
   }, []);

@@ -23,7 +23,7 @@ const Sidebar = () => {
   const { url } = useRouteMatch();
   useEffect(() => {
     const { email } = loggedInUser;
-    const url = `https://morning-tor-68251.herokuapp.com/isAdmin/${email}`;
+    const url = `https://asha-it-server.vercel.app/isAdmin/${email}`;
     axios.get(url).then((res) => setIsAdmin(res.data));
   }, [loggedInUser, setIsAdmin]);
 

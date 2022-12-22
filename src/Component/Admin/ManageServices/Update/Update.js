@@ -18,7 +18,7 @@ const Update = ({ id, setUpdatestatus, setCurrentData }) => {
   const [serviceImgUrl, setServiceImageUrl] = useState(null);
   useEffect(() => {
     axios
-      .get(`https://morning-tor-68251.herokuapp.com/singleService/${id}`)
+      .get(`https://asha-it-server.vercel.app/singleService/${id}`)
       .then((res) => {
         setSingleServiceData(res.data);
         setServiceImageUrl(res.data.imgUrl);
@@ -27,7 +27,7 @@ const Update = ({ id, setUpdatestatus, setCurrentData }) => {
 
   const onSubmit = (data) => {
     const newData = { ...data, imgUrl: serviceImgUrl };
-    const url = `https://morning-tor-68251.herokuapp.com/updateService/${id}`;
+    const url = `https://asha-it-server.vercel.app/updateService/${id}`;
     axios.patch(url, newData).then((res) => {
       setUpdatestatus(false);
       setImageUploaded(null);

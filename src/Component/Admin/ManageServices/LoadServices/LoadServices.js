@@ -14,7 +14,7 @@ const LoadServices = (props) => {
 
   const deleteService = (id) => {
     axios
-      .delete(`https://morning-tor-68251.herokuapp.com/deleteService/${id}`)
+      .delete(`https://asha-it-server.vercel.app/deleteService/${id}`)
       .then((res) => {
         console.log(res.data);
         setServiceActoin(id);

@@ -125,7 +125,7 @@ const CheckOutForm = ({ formData }) => {
 
   useEffect(() => {
     axios
-      .get(`https://morning-tor-68251.herokuapp.com/singleService/${id}`)
+      .get(`https://asha-it-server.vercel.app/singleService/${id}`)
       .then((res) => {
         setSelectedProduct(res.data);
       });
@@ -173,7 +173,7 @@ const CheckOutForm = ({ formData }) => {
         status: "Pending",
       };
       console.log(newData);
-      const url = "https://morning-tor-68251.herokuapp.com/placeOrder";
+      const url = "https://asha-it-server.vercel.app/placeOrder";
 
       axios.post(url, newData).then((res) => {
         console.log(res.data);

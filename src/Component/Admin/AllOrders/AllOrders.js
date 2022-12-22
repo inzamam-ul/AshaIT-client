@@ -12,8 +12,8 @@ const AllOrders = () => {
   useEffect(() => {
     const { email } = loggedInUser;
     const url = isAdmin
-      ? `https://morning-tor-68251.herokuapp.com/allOrder`
-      : `https://morning-tor-68251.herokuapp.com/allOrder/${email}`;
+      ? `https://asha-it-server.vercel.app/allOrder`
+      : `https://asha-it-server.vercel.app/allOrder/${email}`;
     axios.get(url).then((res) => setAllOrder(res.data));
   }, [isAdmin, loggedInUser]);
 

@@ -18,7 +18,7 @@ const AddServices = () => {
   const onSubmit = (data, e) => {
     const newData = { ...data, imgUrl };
     console.log(newData);
-    const url = "https://morning-tor-68251.herokuapp.com/addService";
+    const url = "https://asha-it-server.vercel.app/addService";
 
     axios.post(url, newData).then((res) => {
       console.log(res.data);

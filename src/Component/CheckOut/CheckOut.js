@@ -9,7 +9,7 @@ const CheckOut = () => {
   const [checkout, setCheckout] = useState({});
   useEffect(() => {
     axios
-      .get(`https://morning-tor-68251.herokuapp.com/singleService/${productId}`)
+      .get(`https://asha-it-server.vercel.app/singleService/${productId}`)
       .then((res) => {
         setCheckout(res.data);
       });

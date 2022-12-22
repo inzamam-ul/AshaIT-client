@@ -7,7 +7,7 @@ const ManageServices = () => {
   const [serviceAction, setServiceActoin] = useState("");
   useEffect(() => {
     axios
-      .get("https://morning-tor-68251.herokuapp.com/services")
+      .get("https://asha-it-server.vercel.app/services")
       .then((response) => setServiceData(response.data));
   }, [serviceAction]);
   return (
